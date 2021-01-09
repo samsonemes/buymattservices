@@ -1,0 +1,17 @@
+.navlink {
+    position: relative;
+    text-decoration: none;
+
+}
+
+.navlink::after{
+    border-radius: 50%;
+    border-top: .1em solid #c53030;
+    content: "";
+    position: absolute;
+        right: 40%;
+        left: 40%;
+        bottom: .04em;
+
+    ;
+}

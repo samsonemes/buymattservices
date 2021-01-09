@@ -1,0 +1,50 @@
+
+#menu {
+    display: flex;
+}
+
+/* .nav {
+    display: inline-block;
+} */
+
+.nav li.services {
+    position: relative;
+}
+
+.nav li.services ol.dropdown {
+    position: absolute;
+}
+
+
+/* triggers */
+/* Hidden */
+.dropdown li {
+    display: none;
+}
+
+/* Show */
+.nav li.services:hover .dropdown li {
+    display: block;
+}
+
+
+
+ /* animation */
+.services:hover .dropdown {
+     opacity: 0;
+     animation: anime 300ms ease-in-out forwards;
+     
+ }
+ 
+ @keyframes anime{
+     0%{
+         opacity: 0;
+         transform: rotateX(-90deg) translateX(20px);
+     
+     }
+     100% {
+         opacity: 1;
+         transform: rotateX(0deg) translateX(0px);
+     }
+ }
+ 
